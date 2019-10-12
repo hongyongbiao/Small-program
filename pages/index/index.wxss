@@ -1,0 +1,109 @@
+/**index.wxss**/
+.swiper{
+  width: 100%;
+  margin: 0rpx;
+}
+.banner_h{
+  width: 100%;
+  height: 390rpx;
+}
+.swiper image{
+  width: 100%;
+  display: block;
+  height: 390rpx;
+}
+.nav_top{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 20rpx 0rpx;
+}
+.nav_top_item{
+  display: flex;
+  width: 33.333%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+  text-align: center;
+  border-radius: 8rpx;
+}
+.nav_top_item image{
+  width: 100rpx;
+  height: 40rpx;
+  display: inline-block;
+  margin: 10rpx 0;
+}
+.nav_top_item text{
+  font-size: 24rpx;
+  line-height: 48rpx;
+  justify-content: center;
+  align-items: center;
+}
+.active_red{
+  color: #27BBFA;
+}
+
+/*list*/
+.nav_section{
+  width: 100%;
+}
+.nav_section_item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30rpx;
+  border-bottom: 2rpx solid #ddd;
+}
+.nav_section_item:active{
+  background: #ddd;
+}
+.nav_section_item view{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+}
+
+.section_image{
+  flex: 3;
+}
+.section_image image{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.section_con{
+  flex: 7;
+  font-size: 26rpx;
+  color:#9a9a9a;
+  padding-left:10rpx; 
+}
+
+.section_con_sub{
+  font-size: 30rpx;
+  line-height: 60rpx;
+  color: #000;
+  margin-bottom: 10rpx;
+}
+.section_con_price{
+  font-size: 32rpx;
+  line-height: 60rpx;
+  color: red;
+}
+.text_index{
+  padding-top: 8rpx;
+}
+.section_book{
+  flex:2;
+  width: 50%;
+  height: 50%;
+  border-radius: 100%;
+  font-size: 26rpx;
+  background: #27BBFA;
+  color: #fff;
+  text-align: center;
+  padding: 36rpx 0;
+  margin-top: 30rpx;
+
+}

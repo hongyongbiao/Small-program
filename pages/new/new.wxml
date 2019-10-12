@@ -1,0 +1,17 @@
+<!--pages/new/new.wxml-->
+<scroll-view scroll-y="true" class="new_body" bindscrolltolower="loadMore">
+<view class="new_banner">
+  <image src="{{'http://192.168.0.101:3000'+banner_url[0].img}}"></image>
+</view>
+<view class="new_content">
+  <block wx:for="{{new_list}}" wx:key="index">
+    <view class="section_item" bindtap="newDetail" data-id="{{item.new_id}}">
+       <text class="new_title">{{item.new_title}}</text>
+       <view class="new_bott">
+           <text class="new_time">{{item.new_time}}</text>
+           <text class="arrow"></text>
+       </view>
+    </view>
+  </block>
+</view>
+</scroll-view>

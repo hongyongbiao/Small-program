@@ -1,0 +1,59 @@
+<view class="container">
+<scroll-view scroll-y="true" class="page_body" bindscrolltolower="loadMore">
+  <view>
+     <swiper class="banner_h" indicator-dots="{{indicatorDots}}"
+             autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{banner_url}}" wx:key="{{index}}">
+           <swiper-item class="swiper">
+              <block wx:if="{{item}}">
+                <image src="{{'http://192.168.0.101:3000'+item.img}}"></image>
+              </block>
+              <block wx:else>
+                <image src="../../image/default_pic.png"></image>
+              </block>
+           </swiper-item>
+        </block>
+     </swiper>
+  </view>
+  <!--导航 nav-->
+  <view class="nav_top">
+    <block wx:for="{{navTopItems}}" wx:key="index">
+     <view class="nav_top_item {{curNavId==item.id?'active_'+colors[index]:''}}" data-id="{{item.id}}" data-index="{{index}}" bindtap="switchTap">
+       <image src="{{item.icon}}"></image>
+       <text>{{item.title}}</text>
+     </view>
+    </block>
+  </view>
+  
+  <!--list-->
+  <view class="nav_section">
+     <view wx:if="{{navSelectionItems}}">
+        <block wx:for="{{navSelectionItems}}" wx:key="index">
+          <view class="nav_section_item">
+             <view class="section_image" bindtap="navigateDetail">
+             <block wx:if="{{item}}">
+                 <image src="{{item.img}}"></image>
+             </block>
+             <block wx:else>
+                 <image src="../../image/default_pic.png"></image>
+             </block>
+             </view>
+             <!--说明 -->
+             <view class="section_con" bindtap="navigateDetail" data-id="{{item.product_list_id}}">
+                <view class="section_con_sub">
+                   <text>{{item.title}}</text>
+                </view>
+                <view class="section_con_price">
+                    <text>${{item.price}}</text>
+                </view>
+                <view class="text_index">{{item.content}}</view>
+             </view>
+          </view>
+        </block>
+     </view>
+     <view wx:else>
+        <text>暂无数据</text>
+     </view>
+  </view>
+</scroll-view>
+</view>

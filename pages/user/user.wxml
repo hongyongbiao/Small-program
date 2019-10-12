@@ -1,0 +1,16 @@
+<!--pages/user/user.wxml-->
+<view class="mine_container">
+  <view class="mine_add">
+    <map id="map" longitude="113.9994" latitude="22.595784" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 300px;"></map>
+  </view>
+  <view class="mine_contact">
+    <text class="contact_title">Contact Us</text>
+    <text>Email: sales11@adtek-fiber.com</text>
+    <text>Tel: 0086 755 83545255</text>
+    <text>Fax: 0086 755 83545271</text>
+    <text>Zip Code: 518000</text>
+    <text>Skype: sales11.adtek</text>
+    <text>Office Address: 10 Floor, JinQi Wisdom Valley, Nanshan, Shenzhen</text>
+    <text>Factory Address: 5F, AnjuYuan No.28 Wangjingkeng ,Dakan Village, Nanshan, Shenzhen</text>
+  </view>
+</view>

@@ -1,0 +1,14 @@
+<!--pages/new_detail/new_detail.wxml-->
+<view class="new_container" wx:for="{{new_article}}" wx:key="index">
+   <view class="new_article_title">
+      <text class="article_title">{{item.new_title}}</text>
+      <view class="article_title_content">
+         <text class="article_time">{{item.new_time}}</text>
+         <text class="article_render">阅读 999</text>
+      </view>
+   </view>
+   <view class="new_article_content">
+      <image src="{{item.new_img_o}}" mode="aspectFill"></image>
+      <text>{{item.detail_content}}</text>
+   </view>
+</view>

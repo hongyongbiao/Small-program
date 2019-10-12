@@ -1,0 +1,45 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/user/user",
+    "pages/new/new",
+    "pages/new_detail/new_detail",
+    "pages/detail/detail"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#27BBFA",
+    "navigationBarTitleText": "ADTEK Website",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#333333",
+    "selectedColor": "#2794fa",
+    "borderStyle": "white",
+    "backgroundColor": "#fbfbfb",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "Home",
+        "iconPath": "images/icon_home.png",
+        "selectedIconPath": "images/icon_home_select.png"
+      },
+      {
+        "pagePath": "pages/new/new",
+        "text": "New",
+        "iconPath": "images/icon_new.png",
+        "selectedIconPath": "images/icon_new_select.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "About us",
+        "iconPath": "images/icon_me.png",
+        "selectedIconPath": "images/icon_me_select.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap93.json"
+}

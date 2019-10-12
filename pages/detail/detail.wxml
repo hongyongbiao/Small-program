@@ -1,0 +1,21 @@
+<!--pages/detail/detail.wxml-->
+<view class="ar_coverpath">
+   <image src="{{'http://192.168.0.101:3000'+banner_url[1].img}}"></image>
+</view>
+<view class="ar_cont">
+   <view wx:for="{{product_detail}}" wx:key="index">
+      <view class="ar_cont_h1">
+         <image class="ar_product" src="{{item.detail_content_o}}"></image>
+         <view class="ar_title">
+           <text class="ar_cont_title">{{item.title}}</text>
+           <text class="ar_cont_price">${{item.price}}</text>
+         </view>
+      </view>
+      <text class="cont">
+           {{item.title_content}}
+      </text>
+      <view class="ar_line"></view>
+      <text class="ar_cont_h1">Detailed Description</text>
+      <image class="ar_detail" src="{{item.detail_content_f}}"></image>
+   </view>
+</view>
